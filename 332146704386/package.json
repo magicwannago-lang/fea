@@ -1,9 +1,9 @@
 {
-  "name": "my-website",
+  "name": "my-vercel-site",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "build": "mkdir -p public && echo '<html><body><h1>Hello Vercel!</h1><p>Deployment Successful!</p></body></html>' > public/index.html",
-    "dev": "echo 'Development server'"
-  },
-  "dependencies": {}
+    "build": "mkdir -p dist && cp -r public/* dist/ 2>/dev/null || (echo '<html><h1>Hello Vercel!</h1><p>Build: '$(date)'</p></html>' > dist/index.html)",
+    "dev": "echo 'Use local server'"
+  }
 }
