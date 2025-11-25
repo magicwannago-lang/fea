@@ -1,40 +1,18 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站部署成功</title>
+    <title>静态网站 - Vercel</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 600px;
-            margin: 100px auto;
-            padding: 20px;
-            line-height: 1.6;
-            text-align: center;
-        }
-        .success {
-            color: #10b981;
-            font-size: 2em;
-        }
-        .deploy-id {
-            background: #f3f4f6;
-            padding: 10px;
-            border-radius: 5px;
-            font-family: monospace;
-            margin: 20px 0;
-        }
+        body { font-family: Arial; margin: 100px auto; text-align: center; }
+        h1 { color: green; }
     </style>
 </head>
 <body>
-    <div class="success">✅ 部署成功！</div>
-    <h1>你的 Vercel 网站正在运行</h1>
-    <p>部署 ID: <span class="deploy-id">sin1::xszsd-1764086435133-8c029b284f92</span></p>
-    <p>如果看到这个页面，说明配置正确。</p>
-    <div id="timestamp"></div>
-    
+    <h1>🚀 静态网站部署成功</h1>
+    <p>这个页面直接作为静态文件提供服务。</p>
+    <p>时间: <span id="time"></span></p>
     <script>
-        document.getElementById('timestamp').textContent = '页面生成时间: ' + new Date().toLocaleString();
+        document.getElementById('time').textContent = new Date().toLocaleString();
     </script>
 </body>
 </html>
