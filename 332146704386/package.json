@@ -1,8 +1,16 @@
 {
-  "name": "my-vercel-site",
-  "version": "1.0.0",
+  "name": "fea",
+  "type": "module",
   "scripts": {
-    "build": "mkdir -p public && echo '<!DOCTYPE html><html><head><title>Vercel成功</title></head><body><h1>✅ 成功部署!</h1><p>构建时间: '$(date)'</p></body></html>' > public/index.html",
-    "now-build": "npm run build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.0",
+    "@vitejs/plugin-vue": "^4.0.0"
   }
 }
